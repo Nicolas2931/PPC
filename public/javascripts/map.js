@@ -1,15 +1,15 @@
 var map = L.map('main_map', {
-    center: [10.988119, -74.789661],
+    center: [4.579593925023963, -74.15694207715741],
     zoom: 13
 });
 
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
 }).addTo(map)
-
-// L.marker([51.505, -0.09]).addTo(map);
-// L.marker([51.510, -0.15]).addTo(map);
-// L.marker([51.507, -0.11]).addTo(map);
+//Para agregar gotas
+//L.marker([4.579609971451944, -74.15755897972817]).addTo(map);
+//L.marker([4.580979794824863, -74.1559421117009]).addTo(map);
+//L.marker([4.580636524835112, -74.15537859708105]).addTo(map);
 
 $.ajax({
     dataType: "json",
