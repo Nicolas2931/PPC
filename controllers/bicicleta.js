@@ -1,5 +1,5 @@
 var Bicicleta = require('../models/bicicleta');
-
+//Renderiza la lista de las bicicletas
 exports.bicicleta_list = function(req, res){
 	res.render('bicicletas/index', {bicis: Bicicleta.allBicis});
 }

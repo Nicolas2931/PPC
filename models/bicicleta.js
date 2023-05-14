@@ -5,10 +5,10 @@ var Bicicleta = function(id, color, modelo, ubicacion){
 	this.ubicacion = ubicacion;
 }
 
-Bicicleta.prototype.ToString = function (){
-	return 'id; ' + thiis.id + " | color: " + this.color + " | ubicacion" + this.ubicacion;
+Bicicleta.prototype.toString = function (){
+	return 'id: ' + this.id + " | color: " + this.color + " | ubicacion" + this.ubicacion;
 }
-
+//Array donde se guarda las bicicletas
 Bicicleta.allBicis = [];
 Bicicleta.add = function(aBici){
 	Bicicleta.allBicis.push(aBici);
@@ -30,11 +30,11 @@ Bicicleta.removeById = function(aBiciId){
 		}
 	}
 }
+//Añadir bicibletas
+var a = new Bicicleta(1, 'rojo', 'urbana', [4.579609971451944, -74.15755897972817]);
+var b = new Bicicleta(2, 'blanca', 'urbana', [4.580979794824863, -74.1559421117009]);
 
-// var a = new Bicicleta(1, 'rojo', 'urbana', [10.989413, -74.789355]);
-// var b = new Bicicleta(2, 'blanca', 'urbana', [10.987611, -74.789232]);
-
-// Bicicleta.add(a);
-// Bicicleta.add(b);
+Bicicleta.add(a);
+Bicicleta.add(b);
 
 module.exports = Bicicleta;
